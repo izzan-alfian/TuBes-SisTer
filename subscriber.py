@@ -17,7 +17,7 @@ print("Creating client")
 client = mqtt.Client("P2")
 client.on_message = on_message
 print("Conecting to broker")
-client.connect("localhost", port = 3333)
+client.connect("broker.emqx.io", port = 1883)
 
 client.loop_start()
 print("Subscribing")

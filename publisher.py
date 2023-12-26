@@ -2,11 +2,11 @@ import paho.mqtt.client as mqtt
 import time
 import datetime
 
-broker_address="localhost"
-print("creating new instance")
+broker_address="broker.emqx.io"
+print("Creating new instance")
 client = mqtt.Client("P1")
-print("connecting to broker")
-client.connect(broker_address, port=3333)
+print("Connecting to broker")
+client.connect(broker_address, port=1883)
 
 
 client.loop_start()
